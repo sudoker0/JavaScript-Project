@@ -4,9 +4,31 @@
     I decide to put it into one place. Of course, most of the code are gathered from website like StackOverFlow, etc. And there are code that might not work
     in certain version of browser to I am not 100% sure that most of the code is usable in certain browser. But it should work in the latest browser.
     Version: 0.2_Alpha
+                        #@@@@@@@%
+                        #@@@@@@@%
+                    %@@@&&&&&&&&&@@@@
+                    %@@@&&&&&&&&&@@@@
+                @@@@%%%%&&&&&@@@@@@@@@@@@
+            @@@@&&&&&&&&&&&&&&&&&@@@@@@@@@@@@.
+            @@@@&&&&&&&&&&&&&&&&&@@@@@@@@@@@@.
+        ,@@@@&&&&&&&&&&&&&&&&&&&&&@@@@@@@@%%%%&@@@*
+        ,@@@@&&&&&&&&&&&&&&&&&&&&&@@@@@@@@%%%%&@@@*
+    @@@@%%%%%&&&&&&&&@@@@&&&&&%%%%@@@@@@@@@@@@@@@@@@@@
+    @@@@&&&&&@@@@&&&&&&&&&&&&&&&&&@@@@@@@@@@@@@@@@@@@@
+    @@@@&&&&&@@@&&&&&&&&&&&&&&&&&&@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@&&&&%%%%&&&&&&&&&&&&&@@@@@@@@@@@@@@@@@@@@
+    ####%@@@@&&&&%%%%&&&&&&&&&&&&&@@@@@@@@&&&&@@@@&###
+        ,@@@@@@@@@@@@&&&&&&&&&@@@@@@@@@@@@%%%%&@@@*
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
+            @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.
+                    %@@@@@@@@@@@@@@@@
+                    %@@@@@@@@@@@@@@@@
+    =-=-=-=-=-=-=-All Hail The Redstone!-=-=-=-=-=-=-=
 */
-
-const underjscript = _  = underjs = function() {
+/**
+ * UnderJScript
+ */
+var _ = underjscript = function() {
     let func = {};
     /**
      * Create random string with any length that contain any character that you specify
