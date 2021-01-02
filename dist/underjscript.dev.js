@@ -352,6 +352,41 @@ var _ = underjscript = function underjscript() {
     array.unshift(output);
     console.log.apply(console, [].concat(array));
   };
+  /**
+   * Generate a picture filled with random color
+   * * Source: Me
+   * @param {number} width - The width of the picture
+   * @param {number} height - The height of the picture
+   * @param {number} colorblockwidth - The width of the color block (The width of the color pixel)
+   * @param {number} colorblockheight - The height of the color block (The height of the color pixel)
+   * @param {boolean} exportasreturn - Do you want to export the data of the picture as Base64 in "return"?
+   */
+
+
+  func.random_picture = function (width, height, colorblockwidth, colorblockheight, exportasreturn) {
+    var canvas = document.createElement("canvas");
+    canvas.width = width;
+    canvas.height = height;
+    var ctx = canvas.getContext("2d");
+
+    for (i = 0; i <= width; i++) {
+      for (i1 = 0; i1 <= height; i1++) {
+        var rcolor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+        ctx.fillStyle = rcolor;
+        ctx.fillRect(i, i1, colorblockwidth, colorblockheight);
+      }
+    }
+
+    if (exportasreturn) {
+      return canvas.toDataURL();
+    } else {
+      var link = document.createElement("a");
+      link.download = "randomImage.png";
+      link.href = canvas.toDataURL();
+      link.click();
+      link["delete"];
+    }
+  };
 
   return func;
 };
