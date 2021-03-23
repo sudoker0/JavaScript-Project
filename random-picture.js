@@ -3,8 +3,8 @@ function random_picture(width, height, colorblockwidth, colorblockheight) {
     canvas.width = width;
     canvas.height = height;
     var ctx = canvas.getContext("2d");
-    for (i = 0; i <= width; i+=colorblockwidth) {
-        for (i1 = 0; i1 <= height; i1+=colorblockheight) {
+    for (var i = 0; i <= width; i+=colorblockwidth) {
+        for (var i1 = 0; i1 <= height; i1+=colorblockheight) {
             var rcolor = '#' + (Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
             ctx.fillStyle = rcolor;
             ctx.fillRect(i, i1, colorblockwidth, colorblockheight);
@@ -14,6 +14,6 @@ function random_picture(width, height, colorblockwidth, colorblockheight) {
     link.download = "randomImage.png";
     link.href = canvas.toDataURL();
     link.click();
-    link.delete;
+    link.remove();
 	canvas.remove()
 }
