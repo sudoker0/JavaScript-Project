@@ -15,5 +15,5 @@ function random_picture(width, height, colorblockwidth, colorblockheight) {
     link.href = canvas.toDataURL();
     link.click();
     link.remove();
-	canvas.remove()
+    canvas.remove()
 }

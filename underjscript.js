@@ -153,11 +153,11 @@ var _ = underjscript = function() {
      */
     func.texttobinary = function(input) {
         var result = "";
-		for (var i = 0; i < input.length; i++) {
-			var bin = input[i].charCodeAt(0).toString(2);
-			result += Array(8 - bin.length + 1).join("0") + bin;
-		}
-		return result;
+        for (var i = 0; i < input.length; i++) {
+            var bin = input[i].charCodeAt(0).toString(2);
+            result += Array(8 - bin.length + 1).join("0") + bin;
+        }
+        return result;
     }
     /**
      * * Source: https://gist.github.com/belohlavek/90771ccccb11100e76d1
@@ -167,11 +167,11 @@ var _ = underjscript = function() {
      */
     func.binarytotext = function(input) {
         var result = "";
-		var arr = input.match(/.{1,8}/g);
-		for (var i = 0; i < arr.length; i++) {
-			result += String.fromCharCode(Number(parseInt(arr[i], 2).toString(10)));
-		}
-		return result;
+        var arr = input.match(/.{1,8}/g);
+        for (var i = 0; i < arr.length; i++) {
+            result += String.fromCharCode(Number(parseInt(arr[i], 2).toString(10)));
+        }
+        return result;
     }
     /**
      * Open a "Open" dialog, get the content of the file as Base64 format (To avoid both binary and text handling stuff bull$hit)
